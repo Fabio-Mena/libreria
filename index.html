@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>libreria</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librería</title>
+  <link rel="stylesheet" href="./css/estilos.css" />
 </head>
 <body>
-  <h1>Tema de tu sitio</h1>
-  <p>Sitio web creado por fabio.</p>
+  <header class="header">
+    <a href="index.html" class="logo">Librería</a>
+    <button class="hamburguesa" id="btnmenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada contenedor">
+      <h1>Tu librería de confianza</h1>
+      <p>Los mejores libros para inspirarte y aprender cada día.</p>
+      <a href="contacto.html" class="boton">Contáctanos</a>
+    </section>
+
+    <section class="servicios contenedor">
+      <h2>Libros destacados</h2>
+      <div class="cards">
+        <article class="tarjeta">
+          <img src="img/libro1.jpg" alt="Libro 1" />
+          <h3>El Gran Libro</h3>
+          <p>Un viaje inolvidable por la literatura clásica.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+        <article class="tarjeta">
+          <img src="img/libro2.jpg" alt="Libro 2" />
+          <h3>Lecturas Modernas</h3>
+          <p>Las mejores historias contemporáneas para todos.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+        <article class="tarjeta">
+          <img src="img/libro3.jpg" alt="Libro 3" />
+          <h3>Cuentos y relatos</h3>
+          <p>Pequeñas joyas para disfrutar en cualquier momento.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+        <!-- Agrega hasta seis tarjetas si quieres -->
+      </div>
+    </section>
+
+    <section class="preguntas contenedor">
+      <h2>Preguntas frecuentes</h2>
+      <div class="accordion">
+        <div class="item">
+          <button class="titulo">¿Hacen envíos a domicilio?</button>
+          <div class="contenido">
+            <p>Sí, entregamos libros en todo el país.</p>
+          </div>
+        </div>
+        <div class="item">
+          <button class="titulo">¿Puedo reservar un libro?</button>
+          <div class="contenido">
+            <p>Claro, puedes reservar y recoger en tienda o pedir envío.</p>
+          </div>
+        </div>
+        <div class="item">
+          <button class="titulo">¿Tienen eventos o talleres?</button>
+          <div class="contenido">
+            <p>Sí, consulta nuestra sección de servicios para más detalles.</p>
+          </div>
+        </div>
+        <div class="item">
+          <button class="titulo">¿Cuál es el horario de atención?</button>
+          <div class="contenido">
+            <p>De lunes a viernes de 9am a 7pm, sábados de 9am a 3pm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <section class="galeria contenedor">
+  <h2>Galería</h2>
+  <p>Algunas de nuestras portadas y libros destacados</p>
+  <img src="img/imag1.jpg" alt="Libro 1" />
+  <img src="img/imag2.jpg" alt="Libro 2" />
+  <img src="img/imag3.jpg" alt="Libro 3" />
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p><strong>Librería</strong></p>
+      <p>Teléfono: 2442-2222 · Correo: info@libreria.com</p>
+    </div>
+    <ul class="redes">
+      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+    <p>&copy; 2026 Librería</p>
+  </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
